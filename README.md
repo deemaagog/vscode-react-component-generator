@@ -39,3 +39,8 @@ Template syntax is very simple:
 * Any text surrounded by `/* IF condition */` and `/* ENDIF */`, where `condition` is the name of an option (defined in the package settings) will be removed unless `condition` is enabled (or invalid)
 * Any text surrounded by `/* IF !condition */` and `/* ENDIF */` will be removed unless `condition` is disabled (or invalid)
 * Any remaining `/* IF */` or `/* ENDIF */` comments will be removed, but the text between them will be untouched
+
+
+### installation
+vsce package  # Generates a .vsix file
+code --install-extension my-extension-0.0.1.vsix
